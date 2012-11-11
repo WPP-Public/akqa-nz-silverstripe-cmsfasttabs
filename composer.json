@@ -1,5 +1,5 @@
 {
-	"name": "heyday/silverstripe-csmfasttabs",
+	"name": "heyday/silverstripe-cmsfasttabs",
 	"description": "Allows the ability to create tabs which only load when clicked on",
 	"license": "MIT",
 	"authors": [
