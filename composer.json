@@ -1,0 +1,16 @@
+{
+	"name": "heyday/silverstripe-csmfasttabs",
+	"description": "Allows the ability to create tabs which only load when clicked on",
+	"license": "MIT",
+	"authors": [
+		{
+            "name": "Cam Spiers",
+            "email": "cameron@heyday.co.nz",
+            "role": "Developer"
+        }
+	],
+	"type": "silverstripe-module",
+	"require": {
+		"composer/installers": "1.0.0"
+	}
+}
