@@ -4,7 +4,22 @@ This module is designed to reduce the load time of CMS SiteTree pages. It achiev
 
 ##Installation
 
+###Regular install
 To install just drop the silverstripe-cmsfasttabs directory into your SilverStripe root and run a ?flush=1
+
+###Composer
+Installing from composer is easy,
+
+Create or edit a `composer.json` file in the root of your SilverStripe project, and make sure the following is present.
+
+```json
+{
+    "require": {
+        "heyday/silverstripe-cmsfasttabs": "*"
+    }
+}
+```
+After completing this step, navigate in Terminal or similar to the SilverStripe root directory and run composer install or composer update depending on whether or not you have composer already in use.
 
 ##How to use
 
