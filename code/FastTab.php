@@ -21,10 +21,18 @@ class FastTab extends Tab
 
         $this->setMethod($method ? $method : $name);
 
-        $this->setBuildOn($buildOn && is_array($buildOn) ? $buildOn : array(
-            'TriggerBuild_' . $name,
-            $name
-        ));
+        $build = array();
+
+        if (!$buildOn || !is_array($buildOn)) {
+            $buildOn = array($name);
+        }
+
+        foreach ($buildOn as $value) {
+            $build[] = 'TriggerBuild_' . $value;
+            $build[] = $value;
+        }
+
+        $this->setBuildOn($build);
 
         $this->addRequirements();
 
